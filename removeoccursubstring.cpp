@@ -1,0 +1,17 @@
+#include <bits/stdc++.h> 
+using namespace std;
+
+string replaceSpaces(string &str){
+	string result = "";
+	
+	for(int i = 0; i < str.length(); i++){
+		if(str[i] == ' '){
+			result += "@40";
+		}
+		else{
+			result += str[i];
+		}
+	}
+	
+	return result;
+}
